@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Bookshelf</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 My Digital Bookshelf</h1>
+
+    <form id="bookForm">
+      <input type="text" id="title" placeholder="Book/Material Title" required />
+      <input type="text" id="author" placeholder="Author or Source" required />
+      <input type="text" id="category" placeholder="Category (e.g. Math, Fiction)" />
+      <select id="status">
+        <option value="to read">To Read</option>
+        <option value="reading">Reading</option>
+        <option value="completed">Completed</option>
+      </select>
+      <textarea id="review" placeholder="Your notes or review..."></textarea>
+      <button type="submit">Add to Shelf</button>
+    </form>
+
+    <input type="text" id="searchBar" placeholder="Search by title..." />
+
+    <ul id="bookList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
